@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingLeft="20dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_clock_time"
+        android:textStyle="bold"
+        android:padding="4dp"
+        tools:text="Time Clock"
+        android:textSize="40sp"
+        android:layout_alignLeft="@+id/list_item_clock_title"
+        android:layout_alignStart="@+id/list_item_clock_title" />
+
+
+    <TextView
+        android:id="@+id/list_item_clock_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_item_clock_time"
+        android:padding="4dp"
+        android:text="Title Time"
+        android:textSize="25sp"
+        android:paddingTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/black"
+        android:layout_below="@+id/list_item_clock_title"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/view"
+        android:layout_marginRight="10dp" />
+
+</RelativeLayout>
